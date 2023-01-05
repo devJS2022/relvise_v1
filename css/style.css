@@ -404,13 +404,13 @@ html, body {
     flex: 0 1 25%;
 }
 .advantages__cards-item {
+    padding: 30px 30px;
 }
 
 .cards-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 30px;
     background-color: white;
     width: 100%;
 }
@@ -421,7 +421,7 @@ html, body {
     width: 48px;
     height: 48px;
 }
-.cards-item__statisctic {
+.cards-item__statistic {
     color: #252B42;
     font-size: 40px;
     line-height: 143%;
@@ -445,6 +445,29 @@ html, body {
     }
 }
 
+@media(max-width: 768px) {
+    .advantages {
+        padding: 60px 0 30px 0;
+    }
+    .advantages__cards-item {
+        padding: 20px 30px;
+    }
+}
+
+
+@media(max-width: 500px)  {
+    .header-block__title {
+        font-size: 30px;
+    }
+    .header-block__subtitle {    
+        font-size: 12px;
+        max-width: 400px;
+    }
+    .cards-item__statistic {
+        font-size: 30px;
+    }
+}
+
 @media(max-width: 420px) {
     .advantages__cards-column {
         flex: 0 1 100%;
@@ -457,6 +480,7 @@ html, body {
 
 .practice {
     padding: 80px 0;
+    background-color: #fafafa;
 }
 .practice__container {
 }
@@ -474,6 +498,7 @@ html, body {
     flex: 0 1 24%;
     padding: 0 15px;
     min-height: 100%;
+    background-color: #fff;
 }
 .practice__cards-item {
     display: flex;
@@ -491,6 +516,7 @@ html, body {
     letter-spacing: 0.1px;
     max-width: 135px;
     margin: 0 0 15px 0;
+    display: block;
 }
 .practice__cards-subtitle {
     font-weight: 500;
@@ -505,12 +531,21 @@ html, body {
     width: 100%;
 }
 
+@media(max-width: 768px) {
+    .practice {
+        padding: 30px 0;
+    }
+}
+
 @media(max-width: 600px) {
     .practice__cards {
         flex-wrap: wrap;
     }
     .practice__cards-column {
         flex: 0 1 50%;
+        margin: 0 0 30px 0;
+    }
+    .practice__cards-subtitle {
         margin: 0 0 15px 0;
     }
 }
@@ -597,6 +632,12 @@ html, body {
     line-height: 171%;
 }
 
+@media(max-width: 768px) {
+    .who-we {
+        padding: 30px 0;
+    }
+}
+
 @media(max-width: 600px) {
     .who-we__main {
         flex-wrap: wrap;
@@ -606,6 +647,14 @@ html, body {
     }
     .who-we__text {
         max-width: 100%;
+    }
+}
+@media(max-width: 500px) {
+    .text-header__title {
+        font-size: 30px;
+    }
+    .text-header__subtitle {
+        font-size: 10px;
     }
 }
 
@@ -797,7 +846,14 @@ html, body {
         flex-direction: column;
     }
 }
-
+@media(max-width: 768px) {
+    .contact {
+        padding: 60px 0 30px 0;
+    }
+    .contact__item {
+        padding: 40px 40px;
+    }
+}
 
 
 
@@ -844,6 +900,12 @@ html, body {
     padding: 0 40px;
     background-color: #FF7B47;
     border-radius: 5px;
+}
+
+@media(max-width: 768px) {
+    .contactUs {
+        padding: 20px 0;
+    }
 }
 
 @media(max-width: 680px) {
